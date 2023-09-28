@@ -28,14 +28,15 @@ def newton_polynomial(x_data, y_data, x):
 def f1(x):
     return 1/(1+np.exp(-x))
 
+n = 50
 
-x = np.linspace(-10, 10, 50) # X от -5 до 5
+x = np.linspace(-10, 10, n) # X от -5 до 5
 y = []
-for i in range(50):
+for i in range(n):
     y.append(f1(x[i]))
 
 y1 = []
-for i in range(50):
+for i in range(n):
     y1.append(newton_polynomial(x,y,x[i]))
     print("{:8.10f} {:8.10f}".format(y[i], y1[i]))
 
