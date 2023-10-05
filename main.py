@@ -52,6 +52,7 @@ n = 50
 
 #x = np.linspace(-10, 10, n)# X от -10 до 10
 x = chebyshev_nodes(n,-10,10)
+
 y = f1(x)
 
 y1 = []
